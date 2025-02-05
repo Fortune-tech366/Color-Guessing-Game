@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.targetColor{
+    padding: 1rem 3rem;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddbdb;
+    padding: 2rem;
+    margin: 0;
+}
+
+.color{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: red;
+    border: 1px solid black;
+}
+.color1{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: blue;
+    border: 1px solid black;
+}
+.color2{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: green;
+    border: 1px solid black;
+}
+.color3{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.color4{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: purple;
+    border: 1px solid black;
+}
+.color5{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.color:hover, .color1:hover, .color2:hover, .color3:hover, .color4:hover, .color5:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: aqua;
+    padding: 2rem 8rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+@media (width > 468px){
+    .options{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

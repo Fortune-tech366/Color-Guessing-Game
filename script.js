@@ -9,12 +9,16 @@ const scoreDisplay = document.querySelector(".score");
 let targetColor = "";
 let score = 0;
 
-newGameButton.addEventListener("click", function () {
+function setNewTargetColor() {
   let randomNum = getRandomNum();
   targetColor = colors[randomNum];
   color.style.backgroundColor = targetColor;
-  newGameButton.textContent = "New Game";
   statusDisplay.textContent = "";
+}
+
+newGameButton.addEventListener("click", function () {
+  setNewTargetColor();
+  newGameButton.textContent = "New Game";
 });
 
 colorOptions.forEach((option, index) => {
@@ -24,6 +28,7 @@ colorOptions.forEach((option, index) => {
     if (selectedColor === targetColor) {
       statusDisplay.textContent = "Congratulations! You guessed correctly!";
       score++;
+      setNewTargetColor();
     } else {
       statusDisplay.textContent = "Try again!";
     }

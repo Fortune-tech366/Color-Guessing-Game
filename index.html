@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="colorBox">
         <div class="targetColor">
             Welcome
         </div>
 
-        <div class="options">
+        <div class="options" id="colorOptions">
             <div class="color"></div>
             <div class="color"></div>
             <div class="color"></div>
@@ -21,12 +21,12 @@
             <div class="color"></div>
         </div>
 
-        <div class="instructions">
+        <div class="instructions" id="gameInstructions">
             <h4>Guess The Correct Color</h4>
         </div>
 
-        <div class="status"></div>
-        <div class="score">score: </div>
+        <div class="status" id="gameStatus"></div>
+        <div class="score" id="score">score: </div>
     </div>
     <button class="newGame" type="reset" data-testid="newGameButton">Start Game</button>
 
